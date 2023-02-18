@@ -1,28 +1,29 @@
-const mongoose = require("mongoose");
-require("dotenv").config();
+/*global process*/
+const mongoose = require('mongoose')
+require('dotenv').config()
 
-mongoose.set("strictQuery", false);
+mongoose.set('strictQuery', false)
 console.log(`Connecting to ${process.env.MONGODB_URI}`)
 mongoose
   .connect(process.env.MONGODB_URI)
-  .then((result) => {
-    console.log("Connected to MongoDB");
+  .then(() => {
+    console.log('Connected to MongoDB')
   })
   .catch((error) => {
-    console.log("Error connecting to MongoDB");
-    console.log("Error...", error)
-  });
+    console.log('Error connecting to MongoDB')
+    console.log('Error...', error)
+  })
 
 const personSchema = new mongoose.Schema(
   {
     name: {
       type: String,
       minLength: 3,
-      required: [true, "name is missing"],
+      required: [true, 'name is missing'],
     },
     number: {
       type: String,
-      required: [true, "number is missing"],
+      required: [true, 'number is missing'],
       minLength: 8,
       validate: {
         validator: (num) => {
@@ -34,13 +35,13 @@ const personSchema = new mongoose.Schema(
       }
     },
   },
-  { strict: "throw" }
-);
-mongoose.set("toJSON", {
+  { strict: 'throw' }
+)
+mongoose.set('toJSON', {
   transform: (document, ret) => {
-    ret.id = ret._id.toString();
-    delete ret._id;
-    delete ret.__v;
+    ret.id = ret._id.toString()
+    delete ret._id
+    delete ret.__v
   },
-});
-module.exports = mongoose.model("Person", personSchema);
+})
+module.exports = mongoose.model('Person', personSchema)
