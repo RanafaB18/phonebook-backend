@@ -10,6 +10,7 @@ mongoose
   })
   .catch((error) => {
     console.log("Error connecting to MongoDB");
+    console.log("Error...", error)
   });
 
 const personSchema = new mongoose.Schema(
