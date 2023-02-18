@@ -16,7 +16,7 @@ To run the app locally, follow these steps:
 
 1. Clone the repository to your local machine:
 
-
+git clone https://github.com/RanafaB18/phonebook-frontend.git
 
 Link to Phonebook - https://phonebook-s0rr.onrender.com
 Link to Frontend - https://github.com/RanafaB18/phonebook-frontend.git
