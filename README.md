@@ -18,5 +18,19 @@ To run the app locally, follow these steps:
 
 git clone https://github.com/RanafaB18/phonebook-frontend.git
 
+4. Open your web browser and go to `http://localhost:3000`.
+
+## Contributing
+
+If you would like to contribute to this project, please fork the repository and create a pull request.
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+## Links
+
+- Phonebook App: https://phonebook-s0rr.onrender.com
+- Frontend Repository: https://github.com/RanafaB18/phonebook-frontend.git
 Link to Phonebook - https://phonebook-s0rr.onrender.com
 Link to Frontend - https://github.com/RanafaB18/phonebook-frontend.git
