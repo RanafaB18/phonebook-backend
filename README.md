@@ -16,7 +16,8 @@ To run the app locally, follow these steps:
 
 1. Clone the repository to your local machine:
 
-git clone https://github.com/RanafaB18/phonebook-frontend.git
+[Link Text](git clone https://github.com/RanafaB18/phonebook-frontend.git)
+
 
 2. Install the dependencies:
 
