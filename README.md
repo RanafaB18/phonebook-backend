@@ -18,6 +18,14 @@ To run the app locally, follow these steps:
 
 git clone https://github.com/RanafaB18/phonebook-frontend.git
 
+2. Install the dependencies:
+
+  cd phonebook-frontend
+  npm install
+
+3. Start the development server:
+  npm start
+
 4. Open your web browser and go to `http://localhost:3000`.
 
 ## Contributing
@@ -32,5 +40,3 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 - Phonebook App: https://phonebook-s0rr.onrender.com
 - Frontend Repository: https://github.com/RanafaB18/phonebook-frontend.git
-Link to Phonebook - https://phonebook-s0rr.onrender.com
-Link to Frontend - https://github.com/RanafaB18/phonebook-frontend.git
